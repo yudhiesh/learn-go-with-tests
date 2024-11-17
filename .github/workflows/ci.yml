@@ -73,3 +73,9 @@ jobs:
       run: |
         go mod tidy
         go test -v ./...
+
+    - name: Run tests in concurrency
+      working-directory: ./concurrency
+      run: |
+        go mod tidy
+        go test -v ./...
