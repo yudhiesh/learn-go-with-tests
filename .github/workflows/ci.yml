@@ -54,3 +54,9 @@ jobs:
       run: |
         go mod tidy
         go test -v ./...
+
+    - name: Run tests in maps
+      working-directory: ./maps
+      run: |
+        go mod tidy
+        go test -v ./...
