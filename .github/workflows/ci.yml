@@ -79,3 +79,9 @@ jobs:
       run: |
         go mod tidy
         go test -v ./...
+
+    - name: Run tests in select
+      working-directory: ./select
+      run: |
+        go mod tidy
+        go test -v ./...
