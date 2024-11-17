@@ -60,3 +60,16 @@ jobs:
       run: |
         go mod tidy
         go test -v ./...
+
+
+    - name: Run tests in di
+      working-directory: ./di
+      run: |
+        go mod tidy
+        go test -v ./...
+
+    - name: Run tests in mocks
+      working-directory: ./mocks
+      run: |
+        go mod tidy
+        go test -v ./...
