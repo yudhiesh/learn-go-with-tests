@@ -91,3 +91,9 @@ jobs:
       run: |
         go mod tidy
         go test -v ./...
+
+    - name: Run tests in context
+      working-directory: ./context
+      run: |
+        go mod tidy
+        go test -v ./...
