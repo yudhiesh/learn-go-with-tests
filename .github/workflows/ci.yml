@@ -85,3 +85,9 @@ jobs:
       run: |
         go mod tidy
         go test -v ./...
+
+    - name: Run tests in sync
+      working-directory: ./sync
+      run: |
+        go mod tidy
+        go test -v ./...
