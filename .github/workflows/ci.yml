@@ -97,3 +97,9 @@ jobs:
       run: |
         go mod tidy
         go test -v ./...
+
+    - name: Run tests in generics
+      working-directory: ./generics
+      run: |
+        go mod tidy
+        go test -v ./...
